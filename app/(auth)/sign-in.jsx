@@ -6,7 +6,7 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 import { images } from "../../constants";
 import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
-import { signIn } from "../../lib/appwrite";
+import { logOut, signIn } from "../../lib/appwrite";
 
 const SignIn = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
