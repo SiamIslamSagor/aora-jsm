@@ -1,12 +1,12 @@
-import { useState } from "react";
 import { Link, router } from "expo-router";
+import { useState } from "react";
+import { Alert, Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
-import { images } from "../../constants";
-import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
-import { logOut, signIn } from "../../lib/appwrite";
+import FormField from "../../components/FormField";
+import { images } from "../../constants";
+import { signIn } from "../../lib/appwrite";
 
 const SignIn = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
